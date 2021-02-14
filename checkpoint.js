@@ -8,6 +8,6 @@ function sentenceAnalyser(str) {
     var words = myStr.split(" ").length
     var vowels = myStr.match(/[aeiou]/gi).length;
     
-    result.push(character, words, vowels)
+    result.push(`Number of characters: ${character}` , `Number of words: ${words}`, `Number of vowels: ${vowels}`)
     return result;
     }
