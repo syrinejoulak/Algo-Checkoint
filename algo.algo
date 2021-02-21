@@ -1,0 +1,25 @@
+ALGORITHM algorithm_name
+VAR
+    c : char :="" ;
+    nb-char , nb-word , nb-vow : INTEGER ;
+BEGIN
+    nb-char := 0 ;
+    nb-word := 0 ; 
+    nb-vow :=0;
+
+    WHILE (c <> ".") DO
+        Read (c) ;
+        nb-word := 1;
+        nb-char := 1;
+
+        IF ( c = "e" OR c = "a" OR c = "u" O c = "i" OR c = "o") THEN
+        nb-vow += 1
+        ELSE_IF (c = " ")
+        nb-word += 1;
+        END_IF 
+    END_WHILE
+    Write ("the length of the sentence is ", nb-char);
+    Write ("the length of the word is ", nb-word);
+    Write ("the length of the vowels is ", nb-vow);
+
+END
